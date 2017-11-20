@@ -1,0 +1,30 @@
+.mat-dialog-container{
+    padding: 0;
+}
+.no-money-modal{
+    height: 100%;
+    width: 100%;
+    .m-modal-container{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        .m-modal-content{
+            .m-modal-header{
+                position: relative;
+                background: darkkhaki;
+                padding: 15px;
+                .close-btn{
+                    position: absolute;
+                    right: 15px;
+                    top: 14px;
+                    background: none;
+                    border: none;
+                }
+            }
+            .m-modal-body{
+                text-align: center;
+                padding: 35px 15px 15px 15px;
+            }
+        }
+    }
+}

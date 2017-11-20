@@ -1,0 +1,32 @@
+.store{
+    .store-header{
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    .items-container{
+        padding: 20px 50px;
+        border: 1px solid black;
+        border-radius: 4px;
+        .items-table{
+            .item-row{
+                margin-bottom: 15px;
+                font-size: 18px;
+                .details{
+                    .item-name{}
+                    .item-cost{}
+                }
+                .item-img{
+                    img{
+                        height: 40px;
+                    }
+                }
+            }
+            .last-item{
+                .item-row{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}

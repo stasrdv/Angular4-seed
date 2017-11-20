@@ -1,0 +1,25 @@
+.inventory{
+    .items-table{
+        padding: 20px 50px;
+        border: 1px solid black;
+        border-radius: 4px;
+        .item-row{
+            margin-bottom: 15px;
+            font-size: 18px;
+            .details{
+                .item-name{}
+                .item-cost{}
+            }
+            .item-img{
+                img{
+                    height: 40px;
+                }
+            }
+        }
+        .last-item{
+            .item-row{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

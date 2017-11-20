@@ -1,0 +1,15 @@
+<div class="inventory">
+    <div class="row">
+        <div class="items-table">
+            <div *ngIf="inventory.items">
+                <div *ngFor="let item of inventory.items; let last = last" [class.last-item]="last">
+                    <div class="row item-row">
+                        <div class="col-xs-12">
+                            <item [item]="item"></item>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

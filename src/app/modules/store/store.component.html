@@ -1,0 +1,31 @@
+<div class="store">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="text-center store-header">
+                <h1>{{storeType}}s</h1>
+            </div>
+        </div>
+    </div>
+    <div class="items-container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="items-table">
+                    <div *ngFor="let item of items; let last = last" [class.last-item]="last">
+                        <div class="row item-row">
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="col-xs-9">
+                                        <item [item]="item" (onSell)="itemSold($event)"></item>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <button class="btn btn-default" (click)="itemSold(item)">Buy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

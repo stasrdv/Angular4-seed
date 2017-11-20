@@ -1,0 +1,29 @@
+.wallet{
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    height: 75px;
+    font-size: 18px;
+    .owner{
+        .owner-label{
+            width: 20%;
+            float: left;
+            margin-right: 20px;
+        }   
+        .name{
+            width: 70%;
+            float: left;
+        }
+    }
+    .budget{
+        .budget-label{
+            width: 20%;
+            float: left;
+            margin-right: 20px;
+        }  
+        .amount{
+            width: 70%;
+            float: left;
+        }
+    }
+}

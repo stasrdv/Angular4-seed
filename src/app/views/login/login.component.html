@@ -1,0 +1,46 @@
+<div class="login">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="text-center">
+                <h2>LOGIN</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="text-center">
+                <p>{{message}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group row">
+                <div class="col-xs-offset-3 col-xs-2">
+                    <label for="username">Username: (alexander)</label>
+                </div>
+                <div class="col-xs-3">
+                    <input type="text" name="username" id="username" class="form-control" #username>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="form-group row">
+                <div class="col-xs-offset-3 col-xs-2">
+                    <label for="password">Password: (1234)</label>
+                </div>
+                <div class="col-xs-3">
+                    <input type="password" name="password" id="password" class="form-control" #password>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="text-center">
+                <button class="btn" (click)="login(username.value, password.value)" *ngIf="!authService.isLoggedIn">Login</button>
+                <button class="btn" (click)="logout()" *ngIf="authService.isLoggedIn">Logout</button>
+            </div>
+        </div>
+    </div>
+</div>
