@@ -32,6 +32,7 @@ export class WeaponStoreComponent {
             new ItemModel(4, 'Mace', 400, 'assets/weapons/mace.png'),
             new ItemModel(5, 'Spear', 350, 'assets/weapons/spear.png')
         ]
+        
         this.wallet = new walletModel('Alexander the great', 1000);
     }
 

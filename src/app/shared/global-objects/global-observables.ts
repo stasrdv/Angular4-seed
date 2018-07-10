@@ -5,9 +5,9 @@
 
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-
+import { Subject } from 'rxjs/Subject';
 @Injectable()
 export class GlobalObservables {
 
-    itemBoughtObservable: BehaviorSubject<any> = new BehaviorSubject<any>(false);
+    itemBoughtObservable = new Subject<any>();
 }
