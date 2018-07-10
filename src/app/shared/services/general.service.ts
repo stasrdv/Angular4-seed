@@ -7,6 +7,7 @@ import { Observable } from "rxjs/Observable";
 @Injectable()
 export class GeneralService {
 
+
     constructor(private httpClient: HttpClient) { }
 
     getCities(params): Observable<any> {

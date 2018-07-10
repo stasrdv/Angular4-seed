@@ -19,12 +19,13 @@
           <li><a routerLink="/weapon-store">Weapon store</a></li>
           <li><a routerLink="/login">Login</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cities <span class="caret"></span></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cities <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li *ngFor="let city of cities">{{city.ISV_SHEM_ISHUV}}</li>
             </ul>
           </li>
         </ul>
+     
         <form class="navbar-form navbar-left">
           <div class="form-group">
             <input id="prefix" name="prefix" type="text" class="form-control" placeholder="Search cities" [(ngModel)]="prefix" (keyup)="getCities()">
